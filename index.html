@@ -5,23 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bolos João</title>
 
+    <!-- Icones -->
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header id="header">
-      <h1>Bolos no Pote do João</h1>
-      <div>...</div>
+      <nav class="container">
+        <a class="logo" href="#">Bolos da tia <span>Jô</span></a>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-cancel_close_delete_exit_logout_icon1"></div>
+      </nav>
     </header>
 
     <main>
-      <section>
-        <img src="./images/bolo.jpg" alt="Bolos no pote de diversos sabores" />
-        <h1>Bolos bem feitos</h1>
-        <p>Bolos feitos com carinho pro seu paladar</p>
-        <a href="#">Encomende</a>
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGNha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="Bolinhos coloridos"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Bolos bem feitos</h2>
+            <p>Diversos sabores de bolos no bote caseiro.</p>
+            <a class="button" href="#">Faça sua encomenda</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1626196874981-40349a369168?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9sb3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="Bolo de chocolate"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              A Bolos da tia Jô surgiu da necessidade de se ter um negócio
+              próprio, que tivesse um investimento atrativo, que envolvesse a
+              família e que fosse prazeroso. Como já era tradição na família
+              reunir-se a mesa para o café da tarde e sempre ter um bolo
+              quentinho saindo do forno, Jô viu que poderia transformar esses
+              momentos tão especiais em um negócio lucrativo.
+            </p>
+            <br />
+            <p>
+              Com uma proposta diferente, a Bolos da tia Jô traz para seus
+              clientes um atendimento totalmente personalizado, rápido e
+              preciso, desde o orçamento até o momento posterior a compra.
+            </p>
+            <br />
+            <p>
+              E assim, contrastando com a complexidade dos dias atuais e a vida
+              agitada do mundo moderno, que a simplicidade do bolo caseiro tem
+              conquistado cada dia mais seu espaço, possibilitando aos nossos
+              clientes momentos especiais com alguém querido, resgatando laços e
+              estreitando relacionamentos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 8 anos no mercado, a
+              <strong>Bolos da tia Jô</strong> fornece bolos com elevado nível
+              de qualidade, conquistando centenas de clientes no brasil com seu
+              sabor marcante e delicioso.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-coffee_shop_muffin_cake_food_icon1"></i>
+              <h3 class="title">Bolos para eventos</h3>
+              <p>
+                Com mais de 8 anos no mercado, a Bolos da tia Jô fornece bolos
+                com elevado nível de qualidade, conquistando centenas de
+                clientes no brasil com seu sabor marcante e delicioso.
+              </p>
+            </div>
+            <div class="card">
+              <ic class="icon-cake_crea_cream_messes_topping_icon1"></ic>
+              <h3 class="title">Bolos no pote</h3>
+              <p>
+                Com mais de 8 anos no mercado, a Bolos da tia Jô fornece bolos
+                com elevado nível de qualidade, conquistando centenas de
+                clientes no brasil com seu sabor marcante e delicioso.
+              </p>
+            </div>
+            <div class="card">
+              <ico class="icon-cake_cream_cupcake_dessert_food_icon1"></ico>
+              <h3 class="title">Bolos para o seu café</h3>
+              <p>
+                Com mais de 8 anos no mercado, a Bolos da tia Jô fornece bolos
+                com elevado nível de qualidade, conquistando centenas de
+                clientes no brasil com seu sabor marcante e delicioso.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer></footer>
+    <script src="main.js"></script>
   </body>
 </html>
