@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bolos João</title>
+    <title>Bolos da tia Jô</title>
 
     <!-- Icones -->
     <link rel="stylesheet" href="./assets/fonts/style.css" />
 
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- Fonts -->
@@ -140,67 +147,130 @@
       </section>
 
       <!--TESTIMONIALS-->
-
       <section class="section" id="testimonials">
-        <div class="container gri">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos finais de clientes</h2>
           </header>
-          <div class="testimonials">
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Bolo gostoso muito bom, delicioso, quero muito maisssss.
-                </p>
-                <cite>
-                  <img
-                    src="https://randomuser.me/api/portraits/women/0.jpg"
-                    alt="Foto de Lorena Costa"
-                  />
-                  Lorena Costa
-                </cite>
-              </blockquote>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Bolo gostoso muito bom, delicioso, quero muito maisssss.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/0.jpg"
+                      alt="Foto de Lorena Costa"
+                    />
+                    Lorena Costa
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Bolo gostoso muito bom, delicioso, quero muito maisssss.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/65.jpg"
+                      alt="Foto de Alice Marrie"
+                    />
+                    Alice Marrie
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Bolo gostoso muito bom, delicioso, quero muito maisssss.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/66.jpg"
+                      alt="Foto de Ingrid Nogueira"
+                    />
+                    Ingrid Nogueira
+                  </cite>
+                </blockquote>
+              </div>
             </div>
 
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Bolo gostoso muito bom, delicioso, quero muito maisssss.
-                </p>
-                <cite>
-                  <img
-                    src="https://randomuser.me/api/portraits/women/65.jpg"
-                    alt="Foto de Alice Marrie"
-                  />
-                  Alice Marrie
-                </cite>
-              </blockquote>
-            </div>
-
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Bolo gostoso muito bom, delicioso, quero muito maisssss.
-                </p>
-                <cite>
-                  <img
-                    src="https://randomuser.me/api/portraits/women/66.jpg"
-                    alt="Foto de Ingrid Nogueira"
-                  />
-                  Ingrid Nogueira
-                </cite>
-              </blockquote>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
 
+      <div class="divider-2"></div>
+
       <!--CONTACT-->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a Jô, queremos tirar suas dúvidas, ouvir suas
+              críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5547997877875=Oi! Gostaria de fazer uma encomenda."
+              class="button"
+              target="_blank"
+              ><q class="icon-whatsapp_icon1"></q> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><q class="icon-telephone_icon1"></q> 47 99787-7875</li>
+              <li><q class="icon-localizao"></q> R. Apucarana, 835</li>
+              <li>
+                <q class="icon-email_envelope_letter_mail_message_icon1"></q
+                >contato@bolosdajo.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
     </main>
 
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Bolos da tia <span>Jô</span></a>
+          <p>©2021 Bolos da tia Jô</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social">
+          <a href="https://www.instagram.com/bolos.emfoco/" target="_blank"
+            ><i class="icon-ig_instagram_photo_icon1"></i></a
+          ><a href="https://facebook.com" target="_blank"
+            ><i class="icon-facebook"></i></a
+          ><a href="https://youtube.com" target="_blank"
+            ><i class="icon-brand_logo_network_social_youtube_icon1"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
     <script src="main.js"></script>
   </body>
 </html>
