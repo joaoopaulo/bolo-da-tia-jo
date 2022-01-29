@@ -38,7 +38,13 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
 })
 
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
@@ -70,4 +76,12 @@ window.addEventListener('scroll', function () {
   } else {
     backToTopButton.classList.remove('show')
   }
+})
+
+/* Menu ativo conforme a seção visível na página */
+
+/* When Scroll */
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
 })
